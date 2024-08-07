@@ -1,7 +1,15 @@
 <!-- component -->
 <div class="min-h-screen bg-gray-50/50">
-  <app-side-menu
+  <!-- <app-side-menu
     [isAuthenticated]="isAuthenticated()"
+    (onSignIn)="onLogin()"
+    (onSignOut)="onLogout()"
+  /> -->
+
+  <lib-apx-side-menu
+    [subTitle]="''"
+    [isAuthenticated]="isAuthenticated()"
+    [titleColor]="TitleColor.purple"
     (onSignIn)="onLogin()"
     (onSignOut)="onLogout()"
   />
